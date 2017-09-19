@@ -1,0 +1,17 @@
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>canvas绘制图形</title>
+    </head>
+    <body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <script type="text/javascript">
+        var myCanvas=document.getElementById("myCanvas");
+        var myContext=myCanvas.getContext('2d');
+    
+        myContext.beginPath();                      //开始一个新的绘制路径
+        myContext.arc(100,75,50,0,2*Math.PI);     //以坐标点(100,75)为圆心，起始角为0，绘制一个半径为50px的圆形
+        myContext.stroke();                         //按照指定的路径绘制弧线
+    
+    </script>
+    </body>

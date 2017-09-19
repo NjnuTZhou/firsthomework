@@ -1,0 +1,21 @@
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>canvas绘制图形</title>
+    </head>
+    <body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <script type="text/javascript">
+        var myCanvas=document.getElementById("myCanvas");
+        var myContext=myCanvas.getContext('2d');
+    
+        var myGradient=myContext.createLinearGradient(0,0,100,0);
+        myGradient.addColorStop(0,"#ff0000");
+        myGradient.addColorStop(1,'#0000ff');
+    
+        myContext.strokeStyle=myGradient;            //设置渐变笔触
+        myContext.lineWidth=5;                         //描边宽度
+        myContext.strokeRect(0,0,100,100);
+    </script>
+    </body>
+    </html>

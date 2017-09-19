@@ -1,0 +1,15 @@
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>canvas绘制图形</title>
+    </head>
+    <body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <script type="text/javascript">
+        var myCanvas=document.getElementById("myCanvas");
+        var myContext=myCanvas.getContext('2d');
+    myContext.strokeStyle="#ff0000";            //设置笔触纯色
+        myContext.strokeRect(0,0,100,100);
+    </script>
+    </body>
+    </html>

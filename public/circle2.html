@@ -1,0 +1,17 @@
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>canvas绘制图形</title>
+    </head>
+    <body>
+    <canvas id="myCanvas" width="500" height="500"  style="margin:100px 0 0 100px;"></canvas>
+    <script type="text/javascript">
+        var myCanvas=document.getElementById("myCanvas");
+        var myContext=myCanvas.getContext('2d');
+    
+        myContext.arc(100,100,50,0,2*Math.PI);
+        myContext.fillStyle="#ff0000";
+        myContext.fill();
+    </script>
+    </body>
+    </html>
